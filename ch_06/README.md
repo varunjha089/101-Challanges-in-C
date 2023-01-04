@@ -18,5 +18,6 @@ Learning about challanges in detail
 ### Challange 50:- Fibonacci Sequence
 Here we will solve Fibonacci Sequence of a number.
 
-<mark>Time Complexity:- </mark> O(n)
-<mark>Space Complexity:- </mark> O(n)
+<b>Time Complexity:- O(n)
+
+Space Complexity:-  O(n)</b>
