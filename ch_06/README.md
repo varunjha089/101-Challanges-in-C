@@ -28,3 +28,12 @@ Here we will convert Decimal to Binary.
 <b>Time Complexity:- O(logn)
 
 Space Complexity:-  O(logn)</b>
+
+### Challange 52:- Sum of First n Natural Numbers
+Here we will calculate sum of first n natural numbers.
+
+<b>Time Complexity:- O(n)
+
+Space Complexity:-  O(n)</b>
+
+This problem can be solved in T.C:- O(1) and S.C:- O(1)
