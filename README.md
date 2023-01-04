@@ -11,9 +11,9 @@
 | 06 | Recursion Challanges | [link](ch_06) |
 | 07 | Pre-Processor Challanges | [link](ch_07) |
 | 08 | Array Challanges | [link](ch_08) |
-| 09 | Recursion Challanges | [link](ch_09) |
-| 10 | Recursion Challanges | [link](ch_10) |
-| 11 | Recursion Challanges | [link](ch_11) |
-| 12 | Recursion Challanges | [link](ch_12) |
-| 13 | Recursion Challanges | [link](ch_13) |
-| 14 | Recursion Challanges | [link](ch_14) |
+| 09 | Multidimensional Array Challange | [link](ch_09) |
+| 10 | String Challanges | [link](ch_10) |
+| 11 | Structure Challanges | [link](ch_11) |
+| 12 | File Input/Output Challanges | [link](ch_12) |
+| 13 | Bitwise Operations Challanges | [link](ch_13) |
+| 14 | Miscellaneous Challanges | [link](ch_14) |
