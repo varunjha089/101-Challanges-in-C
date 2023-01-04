@@ -10,3 +10,13 @@
 | 50 | Fibonacci Sequence | [link](50_fibonacci_sequence.c) |
 | 51 | Decimal to Binary Conversion | [link](51_decimal_to_binary.c) |
 | 52 | Sum of first n natural numbers | [link](52_sum_of_first_n_natural.c) |
+
+
+## Challange Detail
+Learning about challanges in detail
+
+### Challange 50:- Fibonacci Sequence
+Here we will solve Fibonacci Sequence of a number.
+
+<mark>Time Complexity:- </mark> O(n)
+<mark>Space Complexity:- </mark> O(n)
