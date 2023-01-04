@@ -21,3 +21,10 @@ Here we will solve Fibonacci Sequence of a number.
 <b>Time Complexity:- O(n)
 
 Space Complexity:-  O(n)</b>
+
+### Challange 51:- Decimal to Binary
+Here we will convert Decimal to Binary.
+
+<b>Time Complexity:- O(logn)
+
+Space Complexity:-  O(logn)</b>
