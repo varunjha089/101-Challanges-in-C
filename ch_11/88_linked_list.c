@@ -38,7 +38,20 @@ void del(struct node **q, int num){
     while(temp != NULL){
         if(temp -> data == num){
             /*If node to be deleted is the first node of the Linked List*/
-            
+            if(temp == *q){
+                *q = temp -> link;
+            }
+            else{
+                old -> link = temp -> link;
+            }
+
+            free (temp);
+            return;
+        }else{
+            old = temp;
+            temp = temp -> link;
         }
     }
+
+    printf("Element %d not found in the Linked list\n", num);
 }
