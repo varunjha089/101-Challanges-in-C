@@ -28,8 +28,20 @@ void addAfter(struct node *q, int loc, int num){}
 
 void display(struct node *q){}
 
-int count(struct node *q){}
+/*Counts the number of nodes present in the Linked List*/
+int count(struct node *q){
+    int c;
 
+    /*Traverse the entire Linked List*/
+    while(q != NULL){
+        q = q -> link;
+        c++;
+    }
+
+    return c;
+}
+
+/*Delete the specific node from the Linked list*/
 void del(struct node **q, int num){
     struct node *old, *temp;
 
