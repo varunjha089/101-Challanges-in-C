@@ -17,7 +17,51 @@ int count(struct node *);
 void del(struct node **, int);
 
 int main(){
+    struct node *p;
+    p = NULL;
 
+    printf("No. of elements in Linked List = %d\n", count(p));
+    
+    // Adding some elements to linked list
+    append(&p,14);
+    append(&p,30);
+    append(&p,25);
+    append(&p,42);
+    append(&p,17);
+    append(&p,19);
+    append(&p,16);
+
+    //Display the elements of LL
+    display(p);
+
+    //Adding some elements at begining of linked list
+    addAtBeg(&p,999);
+    addAtBeg(&p,788);
+    addAtBeg(&p,877);
+    addAtBeg(&p,562);
+
+    //Adding some elements after certain node
+    addAfter(p, 7, 0);
+    addAfter(p, 2, 1);
+    addAfter(p, 5, 99);
+    addAfter(p, 4, 65);
+
+    //Display the elements of LL
+    display(p);
+
+    printf("No. of elements in Linked List = %d\n", count(p));
+
+    //Deleting some elements
+    del(&p, 99);
+    del(&p, 1);
+    del(&p, 10);
+
+    //Display the elements of LL
+    display(p);
+
+    printf("No. of elements in Linked List = %d\n", count(p));
+
+    return 0;
 }
 
 /*Adds a node at the end of a Linked List*/
@@ -92,7 +136,7 @@ void addAfter(struct node *q, int loc, int num){
 void display(struct node *q){
     /*Traverse the entire Linked List*/
     while(q != NULL){
-        printf("%d", q -> data);
+        printf("%d\t", q -> data);
         q = q -> link;
     }
 
