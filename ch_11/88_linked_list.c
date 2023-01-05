@@ -22,7 +22,17 @@ int main(){
 
 void append(struct node **q, int num){}
 
-void addAtBeg(struct node **q, int num){}
+/*Add the new node at begining of the Linked List*/
+void addAtBeg(struct node **q, int num){
+    struct node *temp;
+
+    /*add new node*/
+    temp = (struct node *)malloc(sizeof(struct node));
+
+    temp -> data = num;
+    temp -> link = *q;
+    *q = temp;
+}
 
 /*Adds a new node after the specified number of nodes*/
 void addAfter(struct node *q, int loc, int num){
