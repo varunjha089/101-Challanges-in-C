@@ -24,7 +24,34 @@ void append(struct node **q, int num){}
 
 void addAtBeg(struct node **q, int num){}
 
-void addAfter(struct node *q, int loc, int num){}
+/*Adds a new node after the specified number of nodes*/
+void addAfter(struct node *q, int loc, int num){
+    struct node *temp, *r;
+    int i;
+
+    if(loc <= 0){
+        printf("Invalid value for location. Unable to add element");
+        return;
+    }
+
+    temp = q;
+    /*Skip to desired portion*/
+    for(i=0; i < loc; i++){
+        temp = temp -> link;
+
+        /*If end of linked list is encountered*/
+        if(temp == NULL){
+            printf("There are less then %d elements in the list\n", loc);
+            return;
+        }
+    }
+
+    /*Insert new node*/
+    r = (struct node *)malloc(sizeof(struct node));
+    r -> data = num;
+    r -> link = temp -> link;
+    temp -> link = r;
+}
 
 /*Display the contents of every node in Linked List*/
 void display(struct node *q){
@@ -34,7 +61,7 @@ void display(struct node *q){
         q = q -> link;
     }
 
-    printf("\n")
+    printf("\n");
 }
 
 /*Counts the number of nodes present in the Linked List*/
