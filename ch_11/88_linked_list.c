@@ -17,7 +17,7 @@ int count(struct node *);
 void del(struct node **, int);
 
 int main(){
-    
+
 }
 
 /*Adds a node at the end of a Linked List*/
@@ -26,6 +26,7 @@ void append(struct node **q, int num){
     
     /*If the list is empty, create first node*/
     if(*q == NULL){
+        // addAtBeg(q, num); // Try using this function
         temp = (struct node *)malloc(sizeof(struct node));
         temp -> data = num;
         temp -> link = NULL;
