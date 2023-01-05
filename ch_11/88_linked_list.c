@@ -26,7 +26,16 @@ void addAtBeg(struct node **q, int num){}
 
 void addAfter(struct node *q, int loc, int num){}
 
-void display(struct node *q){}
+/*Display the contents of every node in Linked List*/
+void display(struct node *q){
+    /*Traverse the entire Linked List*/
+    while(q != NULL){
+        printf("%d", q -> data);
+        q = q -> link;
+    }
+
+    printf("\n")
+}
 
 /*Counts the number of nodes present in the Linked List*/
 int count(struct node *q){
