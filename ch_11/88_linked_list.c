@@ -17,10 +17,34 @@ int count(struct node *);
 void del(struct node **, int);
 
 int main(){
-
+    
 }
 
-void append(struct node **q, int num){}
+/*Adds a node at the end of a Linked List*/
+void append(struct node **q, int num){
+    struct node *temp, *r;
+    
+    /*If the list is empty, create first node*/
+    if(*q == NULL){
+        temp = (struct node *)malloc(sizeof(struct node));
+        temp -> data = num;
+        temp -> link = NULL;
+        *q = temp;
+    }else{
+        temp = *q;
+
+        /*Goto last node*/
+        while(temp -> link != NULL){
+            temp = temp -> link;
+        }
+
+        /*Add node at the end*/
+        r = (struct node *)malloc(sizeof(struct node));
+        r -> data = num;
+        r -> link = NULL;
+        temp -> link = r;
+    }
+}
 
 /*Add the new node at begining of the Linked List*/
 void addAtBeg(struct node **q, int num){
